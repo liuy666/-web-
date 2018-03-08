@@ -5,42 +5,43 @@ let gulp = require("gulp"),
 	uglify = require("gulp-uglify"),
 	imagemin = require("gulp-imagemin"),
 	sass = require("gulp-sass"),
-	babel = require("gulp-babel");
+	babel = require("gulp-babel")
+	_src = "src";
 
 // 启动服务器
 gulp.task("connect",function(){
 	connect.server({
-		root : "dist",
+		root : _src,
 		livereload : true
 	});
 });
 
 // 将模拟假数据、js库、php文件 复制到 dist目录下
 gulp.task("mock",function(){
-	gulp.src("mock/**/*.*")
+	gulp.src("src/mock/**/*.*")
 		.pipe(gulp.dest("dist/mock"));
 });
 gulp.task("lib",function(){
-	gulp.src("lib/**/*.*")
+	gulp.src("src/lib/**/*.*")
 		.pipe(gulp.dest("dist/lib"));
 });
 gulp.task("php",function(){
-	gulp.src("php/**/*.*")
+	gulp.src("src/php/**/*.*")
 		.pipe(gulp.dest("dist/php"));
 });
 gulp.task("copyfile",["mock","lib","php"]);
 
 // 定义scss编译压缩任务
 gulp.task("sass",function(){
-	gulp.src("sass/**/*.scss")
+	gulp.src("src/sass/**/*.scss")
 		.pipe(sass({outputStyle : "compressed"}))
-		.pipe(gulp.dest("dist/css"))
+		.pipe(gulp.dest(_src + "/css"))
 		.pipe(connect.reload());
 });
 
 // 定义html压缩任务
 gulp.task("htmlmin",function(){
-	gulp.src(["**/*.html","!node_modules/**/*.html"])
+	gulp.src("src/**/*.html")
 		.pipe(htmlmin({collapseWhitespace : true, minifyCSS : true, minifyJS : true}))
 		.pipe(gulp.dest("dist"))
 		.pipe(connect.reload());
@@ -48,7 +49,7 @@ gulp.task("htmlmin",function(){
 
 // 定义js压缩任务
 gulp.task("js",function(){
-	gulp.src("js/**/*.js")
+	gulp.src("src/js/**/*.js")
 		.pipe(babel({
             presets: ['env']
         }))
@@ -59,17 +60,17 @@ gulp.task("js",function(){
 
 // 定义图片压缩任务
 gulp.task("image",function(){
-	gulp.src("images/**/*.*")
+	gulp.src("src/images/**/*.*")
 		.pipe(imagemin())
 		.pipe(gulp.dest("dist/images"));
 });
 
 // 定义监视任务
 gulp.task("watch",function(){
-	gulp.watch("sass/**/*.scss",["sass"]);
-	gulp.watch("js/**/*.js",["js"]);
-	// gulp.watch(["**/*.html","!node_modules/**/*.html"],["htmlmin"]);
+	gulp.watch("src/sass/**/*.scss",["sass"]);
+	gulp.watch("src/js/**/*.js",["js"]);
+	gulp.watch("src/**/*.html",["htmlmin"]);
 });
 
 // 定义默认任务
-gulp.task("default",["sass","js","image","htmlmin","copyfile","connect","watch"]);
+gulp.task("default",["htmlmin","js","image","copyfile","sass","connect","watch"]);
