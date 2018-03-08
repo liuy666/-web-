@@ -1,23 +1,33 @@
 {
-  "name": "ec_website",
+  "name": "project",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "- url:[http://www.biyao.com/account/regist.html](http://www.biyao.com/account/regist.html)\r - register.html\r - register.js\r - 输入框内容格式验证（正则表达式）\r - 用户名验证是否重复\r - 两次密码输入一致\r - 短信验证码（略）\r ## 登录 ##\r - url:[http://www.biyao.com/account/login.html](http://www.biyao.com/account/login.html)\r - login.html\r - login.js\r - 输入框内容格式验证（正则表达式）\r - 密码和用户名验证\r ## 首页 ##\r - url:[http://www.biyao.com/home/index.html](http://www.biyao.com/home/index.html)\r - index.html\r - index.js\r - 导航\r - 分类导航\r - 风琴效果\r - banner淡入淡出轮播\r - 商品图片3D动画效果\r - 搜索栏添加 jsonp 接口（淘宝、天猫、京东、百度等）\r - 楼层导航（需自己添加）\r - 向下滚动一定距离 显示顶部吸顶效果分类导航\r - 当滚动到 <出行必备> 分类时以ajax动态加载后续页面\r ## 分类列表 ##\r - url:[http://www.biyao.com/classify/category.html?categoryId=294](http://www.biyao.com/classify/category.html?categoryId=294)\r - category.html\r - category.js\r - 加载商品 -- ajax + 模板引擎 \r ## 详情 ##\r - detail.html\r - detail.js\r - url:[http://www.biyao.com/products/1300625226000200001-0.html](http://www.biyao.com/products/1300625226000200001-0.html)\r ## 购物车 ##\r - cart.html\r - cart.js\r - url:[http://buy.biyao.com/shopcars/index.html](http://buy.biyao.com/shopcars/index.html)\r ## 确认订单 ##\r - order.html\r - order.js\r ## other ##\r - require.js\r - jQuery.js \r - artTemplate.js\r - cookie.js\r - wamp\r - sass\r - gulp\r - git\r - 头部/底部复用 -- headerfooter.js\r - header.html\r - footer.html",
+  "main": "gulpfile.js",
+  "directories": {
+    "lib": "lib"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/liuy666/project.git"
+  },
   "author": "",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/liuy666/project/issues"
+  },
+  "homepage": "https://github.com/liuy666/project#readme",
   "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
     "gulp": "^3.9.1",
-    "gulp-clean-css": "^3.9.2",
+    "gulp-babel": "^7.0.1",
     "gulp-connect": "^5.5.0",
+    "gulp-htmlmin": "^4.0.0",
     "gulp-imagemin": "^4.1.0",
-    "gulp-livereload": "^3.8.1",
     "gulp-sass": "^3.1.0",
     "gulp-uglify": "^3.0.0"
-  },
-  "dependencies": {
-    "gulp-htmlmin": "^4.0.0"
   }
 }
