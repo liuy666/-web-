@@ -2,6 +2,9 @@
  * 轮播图插件
  */
 ;
+// define(["jquery"],function(){
+	
+// });
 (function($){
 	function Carousel({imgs, width, height,duration}) {
 		this.imgs = imgs; // 待轮播图片的数组，数组元素是对象，包括图片路径与链接地址的属性

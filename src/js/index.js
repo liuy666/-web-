@@ -1,7 +1,6 @@
 require(["config"],function(){
-	require(["jquery"],function($){
+	require(["jquery","carousel","load"],function($){
 		$(function(){
-			console.log("success2!")
 		});
 	});
 });

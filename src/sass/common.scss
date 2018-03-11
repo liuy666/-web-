@@ -1,4 +1,264 @@
-body {
-	background : blue;
+@charset utf-8
+
+// 重置样式
+html, body, ul, li, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,span,i,input,select,textarea,div { margin:0; padding:0;}
+body{font:12px "Microsoft YaHei";}
+ul{list-style:none;}
+h1, h2, h3, h4, h5, h6,i{font-style:normal; font-weight:normal;}
+a{color:#666; text-decoration:none;}
+img{border:none;}
+
+// header样式，用于除登录、注册外的页面头部--header.html
+$bStyle : 1px solid #fff;
+$hHeader : 30px;
+header {
+	height : 135px;
+	.head-top-wrap {
+		background-color: #333;
+		.head-top {
+			height: $hHeader;
+			width: 1080px;
+			margin: 0 auto;
+			.left {
+				float: left;
+				height: $hHeader;
+				li:nth-child(1) a {
+					padding-left: 0;
+				}
+				li:nth-child(2) a {
+					border-left: $bStyle;
+					border-right: $bStyle;
+				}
+			}
+			.right {
+				float: right;
+				height: $hHeader;
+				li:nth-child(5) a {
+					padding-right: 0;
+				}
+				li:nth-child(3) a {
+					border-left: $bStyle;
+					border-right: $bStyle;
+				}
+				li:nth-child(4) {
+					background: url("/images/msgcenter.png") no-repeat 24px center;
+					padding-left: 34px;
+					span {
+						margin-left: 10px;
+					}
+				}
+				li:nth-child(5) {
+					background:#523669 url("/images/shopCar.png") no-repeat 15px center;
+					padding-left: 21px;
+					span {
+						margin: 0 18px 0 3px;
+					}
+				}
+			}
+			li {
+				float: left;
+				height: $hHeader;	
+			}
+			a {
+				padding: 0 18px;
+				margin-top: ($hHeader - 11px) / 2;
+				line-height: 11px;
+				color: #fff;
+				display: block;
+				height: 11px;
+			}
+		}
+	}
+	
+	.head-bottom {
+		background-color: #fff;
+		width: 1080px;
+		margin: 0 auto;
+		overflow : hidden;
+		.logo {
+			width: 239px;
+			float: left;
+			margin-top: 24px;
+			a {
+				display: block;
+				width: 239px;
+				height: 51px;
+				background: url("/images/logo.png") no-repeat;
+				span {
+					display: none;
+				}
+			}
+		}
+		.search {
+			float: right;
+			margin-top: 30px;
+			form {
+				height: 38px;
+				margin-bottom: 11px;
+				border: 1px solid #ccc;
+				border-radius: 3px;
+				input {
+					height: 38px;
+					border: 0;
+					float: left;
+				}
+				#search {
+					width: 486px;
+					border-right: 1px solid #ccc;
+					padding-left: 12px;
+
+				}
+				#submit {
+					width: 39px;
+					background: url("/images/search.png") no-repeat center center;
+				}
+			}
+			.classify {
+				height: 16px;
+				line-height: 16px;
+				a {
+					margin-right: 24px;
+					float: left;
+				}
+			}
+		}
+	}
 }
-h1 {color : white}
+
+// footer样式，用于所有页面尾部--footer.html
+footer {
+	height: 440px;
+	.foot-wrap {
+		width: 1080px;
+		margin: 0 auto;
+		>ul {
+			overflow: hidden;
+			height: 120px;
+			border-bottom: 1px solid #ccc;
+			margin-bottom: 30px;
+			li {
+				float: left;
+				width: 270px;
+				height: 120px;
+				line-height: 120px;
+				box-sizing: border-box;
+				padding-left: 136px;
+				font-size: 16px;
+				&:nth-child(1) {
+					background: url("/images/serve-make.png") no-repeat 23px center;
+				}
+				&:nth-child(2) {
+					background: url("/images/serve-backage.png") no-repeat 23px center;
+				}
+				&:nth-child(3) {
+					background: url("/images/serve-pay.png") no-repeat 23px center;
+				}
+				&:nth-child(4) {
+					background: url("/images/serve-refund.png") no-repeat 23px center;
+				}
+			}
+		}
+		.links {
+			height: 141px;
+			margin-bottom: 48px;
+			div {
+				float: left;
+				text-align: center;
+				h3 {
+					font-size: 16px;
+					line-height: 20px;
+					margin-bottom: 18px;
+				}
+				ul li {
+					height: 26px;
+				}
+				img {
+					width: 103px;
+					height: 103px;
+				}
+				a,p {
+					color: #666;
+					line-height: 26px;
+				}
+			}
+			.email {
+				padding: 0 78px;
+				border-left: 1px solid #ccc;
+				height: 141px;
+			}
+			.QR-code, .attention {
+				margin: 0 120px;
+			}
+			.help {
+				margin-left: 50px;
+			}
+		}
+		.foot-msg p {
+			text-align: center;
+			line-height: 26px;
+			color: #666;
+			span {margin: 0 12px;}
+		}
+		.scan-code {
+			position: fixed;
+			width: 48px;
+			height: 96px;
+			right: 33px;
+			bottom: 148px;
+			.code {
+				width: 48px;
+				height: 48px;
+				background: url("/images/rightBar-code.png") no-repeat;
+				&:hover {
+					background: url("/images/rightBar-codeActive.png") no-repeat;
+
+				}
+			}
+			.top {
+				@extend .code;
+				background: url("/images/rightBar-top.png") no-repeat;
+				&:hover {
+					background: url("/images/rightBar-topActive.png") no-repeat;
+				}
+			}
+			.fixed {
+				position: absolute;
+				z-index: 9;
+				width: 304px;
+				height: 176px;
+				left: -313px;
+				top: -65px;
+				background: #fff;
+				box-shadow: 0 1px 10px 4px rgba(0,0,0,0.05);
+				border-radius: 4px;
+				display: none;
+				dl {
+					width: 123px;
+					float: left;
+					margin: 14px 14px 0 14px;
+					dt {
+						height: 123px;
+						margin-bottom: 16px;
+						img {
+							width: 123px;
+							height: 123px;
+						}
+					}
+					dd {
+						text-align: center;
+					}
+				}
+			}
+			.sjx {
+				width: 5px;
+				height: 16px;
+				left: -9px;
+				top: 18px;
+				background: url("/images/sjx.png") no-repeat;
+				position: absolute;
+				z-index: 10;
+				display: none;
+			}
+		}
+	}
+}
