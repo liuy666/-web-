@@ -1,0 +1,106 @@
+{
+	"res_code":"0",
+	"res_error":"",
+	"res_body":[
+		{
+			"classify_name":"光学眼镜",
+			"classiyf_img":"http://bfs.biyao.com/group1/M00/2E/3D/rBACYVqQ7W6AS1vaAADUZ7_kRnA952.jpg",
+			"classify_title":"依视路集团旗下企业&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":1001, "title": "钛架半框-开", "price":279, "img":"http://bfs.biyao.com/group1/M00/23/D2/rBACYVodAx-AfQsHAABJOJW2v4Q969.jpg"},
+				{"pid":1002, "title": "流年复古光学镜", "price":249, "img":"http://bfs.biyao.com/group1/M00/2E/B2/rBACW1qWHH-ADjzDAACOpvyRhHM890.jpg"},
+				{"pid":1003, "title": "AIR超轻光学镜-B", "price":169, "img":"http://bfs.biyao.com/group1/M00/23/37/rBACYVoTkGuAbkRSAABgAjymRB8765.jpg"}
+			]
+		},
+		{
+			"classify_name":"品质男装",
+			"classiyf_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ7X2AUvyKAACBHqwA7SM443.jpg",
+			"classify_title":"Hugo Boss、PRADA等&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":2001, "title": "三防免烫衬衫五色", "price":219, "img":"http://bfs.biyao.com/group1/M00/25/9F/rBACYVo5s2uAHbY4AABQszzgqCE032.jpg"},
+				{"pid":2002, "title": "男双面飞行员夹克外套上衣", "price":329, "img":"http://bfs.biyao.com/group1/M00/2A/89/rBACVFpyedWAIFzzAACIHLBC3y0638.jpg"},
+				{"pid":2003, "title": "双面布丝光柔滑短T（2件）", "price":199, "img":"http://bfs.biyao.com/group1/M00/21/7D/rBACYVoBS2eAGLERAACGBt2GJLE867.jpg"},
+				{"pid":2004, "title": "大码升级 合体修身牛仔裤", "price":209, "img":"http://bfs.biyao.com/group1/M00/01/EA/rBACYVkT4TaAKAhlAAB5ownl9EQ685.jpg"},
+				{"pid":2005, "title": "男士休闲束脚裤", "price":279, "img":"http://bfs.biyao.com/group1/M00/2C/8F/rBACVFqRH0qAJrZjAABUfkqAuNc228.jpg"},
+				{"pid":2006, "title": "黑色基础款直筒百搭西裤", "price":399, "img":"http://bfs.biyao.com/group1/M00/21/7E/rBACVFoThVSAHFQvAAByF2Bp7Ro483.jpg"},
+				{"pid":2007, "title": "老虎立体绣系带休闲卫裤", "price":269, "img":"http://bfs.biyao.com/group1/M00/23/53/rBACYVoU1k2AWqvdAACOcVaaH1w820.jpg"},
+				{"pid":2008, "title": "羊皮简约小立领夹克", "price":1299, "img":"http://bfs.biyao.com/group1/M00/2A/56/rBACVFpwVGWAeG3uAABNuMc-0cw947.jpg"}
+			]
+		},
+		{
+			"classify_name":"潮流女装",
+			"classiyf_img":"http://bfs.biyao.com/group1/M00/2E/3D/rBACYVqQ7ZKANfnvAABmp_MjcCk976.jpg",
+			"classify_title":"MaxMara、Diesel等&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":3001, "title": "高弹可机洗羊毛女打底衫", "price":389, "img":"http://bfs.biyao.com/group1/M00/2E/2A/rBACYVqOa7SANWk4AACGG2Yj5oc357.jpg"},
+				{"pid":3002, "title": "双面丝光棉T恤（两件装）", "price":199, "img":"http://bfs.biyao.com/group1/M00/2E/E0/rBACYVqXbweAKRy_AACdzbFVkGs263.jpg"},
+				{"pid":3003, "title": "蕾丝连衣裙", "price":299, "img":"http://bfs.biyao.com/group1/M00/2E/DE/rBACW1qXZNGAF4sVAAA59q-s8_I980.jpg"},
+				{"pid":3004, "title": "修身甜美夹克", "price":359, "img":"http://bfs.biyao.com/group1/M00/2E/B4/rBACYVqWNkGAWGzkAABNAjlgtDw030.jpg"},
+				{"pid":3005, "title": "经典女士长款风衣", "price":599, "img":"http://bfs.biyao.com/group1/M00/1B/95/rBACW1mmd1WAUwYgAACbA-CsS8k202.jpg"},
+				{"pid":3006, "title": "四季必备单品小脚裤打底裤", "price":249, "img":"http://bfs.biyao.com/group1/M00/1E/0E/rBACVFn2toCAD6QkAABTskcsHLI800.jpg"},
+				{"pid":3007, "title": "红运相随百搭女士羊绒衫", "price":398, "img":"http://bfs.biyao.com/group1/M00/2D/18/rBACYVp6dWeAYA89AABveDccIjQ405.jpg"},
+				{"pid":3008, "title": "设计师款进口金丝绒阔腿裤", "price":259, "img":"http://bfs.biyao.com/group1/M00/24/10/rBACW1og03yAedBWAACILtbJFCE573.jpg"}
+			]
+		},
+		{
+			"classify_name":"内衣袜子",
+			"classiyf_img":"http://bfs.biyao.com/group1/M00/2E/3D/rBACYVqQ7aeAFIo4AACe7yBzyjY218.jpg",
+			"classify_title":"CK、LA PERLA等&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":4001, "title": "无钢圈蕾丝文胸 肤绿2色", "price":139, "img":"http://bfs.biyao.com/group1/M00/01/EF/rBACW1kT4VGAJF6sAAB2ezRuQyI680.jpg"},
+				{"pid":4002, "title": "莫代尔平角内裤5色装", "price":159, "img":"http://bfs.biyao.com/group1/M00/23/DC/rBACW1odVLSAMLS6AAB82WWbO64211.jpg"},
+				{"pid":4003, "title": "春夏款休闲中筒男袜5双装", "price":69, "img":"http://bfs.biyao.com/group1/M00/2C/92/rBACVFqRLDaAbiAxAACZLGYx4Ro431.jpg"},
+				{"pid":4004, "title": "FTCA30D天鹅绒连裤袜x6", "price":89, "img":"http://bfs.biyao.com/group1/M00/01/F5/rBACYVkT4XqAK_XPAAA59eenEoA545.jpg"},
+				{"pid":4005, "title": "融暄 天竺棉家居服长袖", "price":175, "img":"http://bfs.biyao.com/group1/M00/1B/95/rBACW1mmd1WAUwYgAACbA-CsS8k202.jpg"},
+				{"pid":4006, "title": "男士平底功能性内裤四条装", "price":159, "img":"http://bfs.biyao.com/group1/M00/29/3B/rBACW1pVcgWAMaF1AABPyTsOClg116.jpg"},
+				{"pid":4007, "title": "全棉舒适纱布家居服男女款", "price":189, "img":"http://bfs.biyao.com/group1/M00/1A/E9/rBACYVmbnzWACHj3AACK8MDgo0o551.jpg"},
+				{"pid":4008, "title": "BRW 经典山茶花桑蚕丝围巾", "price":249, "img":"http://bfs.biyao.com/group1/M00/2C/25/rBACVFp_6LOAUQkuAABkxI1n6hU442.jpg"}
+			]
+		},
+		{
+			"classify_name":"母婴儿童",
+			"classiyf_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ7eGAQQfVAACKeDNB5pI776.jpg",
+			"classify_title":"英国皇室御用服装&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":5001, "title": "A.S.S.新生儿彩棉礼盒", "price":239, "img":"http://bfs.biyao.com/group1/M00/01/F4/rBACW1kT4WuABAjFAAB5xNzDMwk619.jpg"},
+				{"pid":5002, "title": "菲菲羽儿弱酸性纸尿裤XL码", "price":89, "img":"http://bfs.biyao.com/group1/M00/23/75/rBACYVoWe2uAbYkGAACUg5VfLjI054.jpg"},
+				{"pid":5003, "title": "儿童大颗粒塑料积木 73pcs", "price":89, "img":"http://bfs.biyao.com/group1/M00/1B/F3/rBACW1mub3uAAwEVAACedYoX1G0415.jpg"},
+				{"pid":5004, "title": "0-24个月宝宝学步机能鞋", "price":109, "img":"http://bfs.biyao.com/group1/M00/11/66/rBACYVkmSyKAXwGlAACa2-2tjiI810.jpg"},
+				{"pid":5005, "title": "4至6年级减负书包", "price":229, "img":"http://bfs.biyao.com/group1/M00/18/D5/rBACYVmBc0KAGxWKAACWasqCR9o697.jpg"},
+				{"pid":5006, "title": "骑行滑步一体童车", "price":469, "img":"http://bfs.biyao.com/group1/M00/01/F5/rBACYVkT4XiAdiTQAAB-uGwUz_s362.jpg"},
+				{"pid":5007, "title": "单品硅胶奶瓶160ml", "price":89, "img":"http://bfs.biyao.com/group1/M00/1B/55/rBACW1mj9qmACJpEAAAwWM2Xlms331.jpg"},
+				{"pid":5008, "title": "女童绞花混纱圆领开衫 2色", "price":129, "img":"http://bfs.biyao.com/group1/M00/2C/C1/rBACVFqUxTqAflPPAACdBtHO8YE069.jpg"}
+			]
+		},
+		{
+			"classify_name":"男女鞋靴",
+			"classiyf_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ7nSAE2JSAACb4aFu4Os017.jpg",
+			"classify_title":"LACOSTE等&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":6001, "title": "尖头圆口高跟鞋 65mm", "price":269, "img":"http://bfs.biyao.com/group1/M00/28/D9/rBACVFph7lKATh7vAABQ1hd4hTk162.jpg"},
+				{"pid":6002, "title": "平头德比鞋", "price":459, "img":"http://bfs.biyao.com/group1/M00/14/AB/rBACYVlI4JKAY7I9AAB-GZ_b5ec222.jpg"},
+				{"pid":6003, "title": "进口小牛皮时尚舒适休闲鞋", "price":419, "img":"http://bfs.biyao.com/group1/M00/26/C5/rBACW1pDB4OAHdvTAACNlqPB6Dk410.jpg"},
+				{"pid":6004, "title": "一脚蹬春秋季男鞋懒人鞋", "price":189, "img":"http://bfs.biyao.com/group1/M00/00/3B/rBACVFkT4W-AOqoIAAB-4cVXW-A883.jpg"},
+				{"pid":6005, "title": "四季休闲健步鞋", "price":169, "img":"http://bfs.biyao.com/group1/M00/1A/33/rBACW1mSwFKAORPbAABunnFNVxg560.jpg"},
+				{"pid":6006, "title": "系带休闲鞋", "price":399, "img":"http://bfs.biyao.com/group1/M00/2F/E3/rBACYVqjhEyAMjsQAACH5osnGQQ293.jpg"},
+				{"pid":6007, "title": "天鹅绒结扣凉鞋", "price":239, "img":"http://bfs.biyao.com/group1/M00/2F/D2/rBACW1qiVeqAUpJtAABuod8851g357.jpg"},
+				{"pid":6008, "title": "日潮复古ERA休闲男鞋", "price":239, "img":"http://bfs.biyao.com/group1/M00/2D/C4/rBACVFqfjBqAFrEdAACOjCSyqyI060.jpg"}
+			]
+		},
+		{
+			"classify_name":"户外运动",
+			"classiyf_img":"http://bfs.biyao.com/group1/M00/2E/3E/rBACW1qQ7pCAAC7iAADNAU-qgGs364.jpg",
+			"classify_title":"斯凯奇、Saucony等&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":7001, "title": "Rp-s1全马级别专业跑鞋男", "price":269, "img":"http://bfs.biyao.com/group1/M00/25/23/rBACYVoyPtCAWKL5AABdm607OcI608.jpg"},
+				{"pid":6002, "title": "RC女士瑜伽长裤", "price":459, "img":"http://bfs.biyao.com/group1/M00/22/95/rBACVFomCYmAC0N9AABAE1RzC7E568.jpg"},
+				{"pid":7003, "title": "男士休闲软壳夹克", "price":419, "img":"http://bfs.biyao.com/group1/M00/2B/99/rBACVFp8BdSAdIAQAACJwhGcbic761.jpg"},
+				{"pid":7004, "title": "男子休闲运动长裤", "price":189, "img":"http://bfs.biyao.com/group1/M00/29/04/rBACYVpTRfyAB_zTAABywjr-wwE828.jpg"},
+				{"pid":7005, "title": "轻薄透气跑步袜×3", "price":169, "img":"http://bfs.biyao.com/group1/M00/00/FA/wKhkVFkKwQuAPkyOAAB0A1nRO9Y763.jpg"},
+				{"pid":7006, "title": "进攻型羽毛球拍", "price":399, "img":"http://bfs.biyao.com/group1/M00/01/F7/rBACW1kT4XuAdatMAAAv47XF7zc895.jpg"},
+				{"pid":7007, "title": "RC男士立领抓绒衣", "price":239, "img":"http://bfs.biyao.com/group1/M00/2C/29/rBACW1pxfimAYeuLAABTOBw9f9M623.jpg"},
+				{"pid":7008, "title": "FreeR-1城市跑鞋男", "price":239, "img":"http://bfs.biyao.com/group1/M00/2F/C8/rBACYVqiNwWAIqccAABRPmt5OCY262.jpg"}
+			]
+		}
+	]
+}
