@@ -1,10 +1,11 @@
 {
-	"res_code":"0",
+	"res_code":0,
 	"res_error":"",
 	"res_body":[
 		{
+			"className":"gxyj",
 			"classify_name":"光学眼镜",
-			"classiyf_img":"http://bfs.biyao.com/group1/M00/2E/3D/rBACYVqQ7W6AS1vaAADUZ7_kRnA952.jpg",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2E/3D/rBACYVqQ7W6AS1vaAADUZ7_kRnA952.jpg",
 			"classify_title":"依视路集团旗下企业&nbsp;&nbsp;制造商直供",
 			"products":[
 				{"pid":1001, "title": "钛架半框-开", "price":279, "img":"http://bfs.biyao.com/group1/M00/23/D2/rBACYVodAx-AfQsHAABJOJW2v4Q969.jpg"},
@@ -13,8 +14,9 @@
 			]
 		},
 		{
+			"className":"pznz",
 			"classify_name":"品质男装",
-			"classiyf_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ7X2AUvyKAACBHqwA7SM443.jpg",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ7X2AUvyKAACBHqwA7SM443.jpg",
 			"classify_title":"Hugo Boss、PRADA等&nbsp;&nbsp;制造商直供",
 			"products":[
 				{"pid":2001, "title": "三防免烫衬衫五色", "price":219, "img":"http://bfs.biyao.com/group1/M00/25/9F/rBACYVo5s2uAHbY4AABQszzgqCE032.jpg"},
@@ -28,8 +30,9 @@
 			]
 		},
 		{
+			"className":"clnz",
 			"classify_name":"潮流女装",
-			"classiyf_img":"http://bfs.biyao.com/group1/M00/2E/3D/rBACYVqQ7ZKANfnvAABmp_MjcCk976.jpg",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2E/3D/rBACYVqQ7ZKANfnvAABmp_MjcCk976.jpg",
 			"classify_title":"MaxMara、Diesel等&nbsp;&nbsp;制造商直供",
 			"products":[
 				{"pid":3001, "title": "高弹可机洗羊毛女打底衫", "price":389, "img":"http://bfs.biyao.com/group1/M00/2E/2A/rBACYVqOa7SANWk4AACGG2Yj5oc357.jpg"},
@@ -43,8 +46,9 @@
 			]
 		},
 		{
+			"className":"nywz",
 			"classify_name":"内衣袜子",
-			"classiyf_img":"http://bfs.biyao.com/group1/M00/2E/3D/rBACYVqQ7aeAFIo4AACe7yBzyjY218.jpg",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2E/3D/rBACYVqQ7aeAFIo4AACe7yBzyjY218.jpg",
 			"classify_title":"CK、LA PERLA等&nbsp;&nbsp;制造商直供",
 			"products":[
 				{"pid":4001, "title": "无钢圈蕾丝文胸 肤绿2色", "price":139, "img":"http://bfs.biyao.com/group1/M00/01/EF/rBACW1kT4VGAJF6sAAB2ezRuQyI680.jpg"},
@@ -58,8 +62,9 @@
 			]
 		},
 		{
+			"className":"myet",
 			"classify_name":"母婴儿童",
-			"classiyf_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ7eGAQQfVAACKeDNB5pI776.jpg",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ7eGAQQfVAACKeDNB5pI776.jpg",
 			"classify_title":"英国皇室御用服装&nbsp;&nbsp;制造商直供",
 			"products":[
 				{"pid":5001, "title": "A.S.S.新生儿彩棉礼盒", "price":239, "img":"http://bfs.biyao.com/group1/M00/01/F4/rBACW1kT4WuABAjFAAB5xNzDMwk619.jpg"},
@@ -73,8 +78,9 @@
 			]
 		},
 		{
+			"className":"nnxx",
 			"classify_name":"男女鞋靴",
-			"classiyf_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ7nSAE2JSAACb4aFu4Os017.jpg",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ7nSAE2JSAACb4aFu4Os017.jpg",
 			"classify_title":"LACOSTE等&nbsp;&nbsp;制造商直供",
 			"products":[
 				{"pid":6001, "title": "尖头圆口高跟鞋 65mm", "price":269, "img":"http://bfs.biyao.com/group1/M00/28/D9/rBACVFph7lKATh7vAABQ1hd4hTk162.jpg"},
@@ -88,8 +94,9 @@
 			]
 		},
 		{
+			"className":"hwyd",
 			"classify_name":"户外运动",
-			"classiyf_img":"http://bfs.biyao.com/group1/M00/2E/3E/rBACW1qQ7pCAAC7iAADNAU-qgGs364.jpg",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2E/3E/rBACW1qQ7pCAAC7iAADNAU-qgGs364.jpg",
 			"classify_title":"斯凯奇、Saucony等&nbsp;&nbsp;制造商直供",
 			"products":[
 				{"pid":7001, "title": "Rp-s1全马级别专业跑鞋男", "price":269, "img":"http://bfs.biyao.com/group1/M00/25/23/rBACYVoyPtCAWKL5AABdm607OcI608.jpg"},

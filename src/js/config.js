@@ -1,7 +1,7 @@
 require.config({
 	baseUrl : "/",
 	paths : {
-		jquery : "lib/jQuery/jquery-3.3.1.min",
+		jquery : "lib/jQuery/jquery-1.12.4.min",
 		cookie : "lib/jquery-cookie-master/jquery.cookie",
 		template : "lib/artTemplate-master/template",
 		carousel : "lib/jquery_plugins/jquery.xmcarousel",

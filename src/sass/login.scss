@@ -1,0 +1,103 @@
+.main {
+	height: 670px;
+	background-color: #f9f9f9;
+	.wrap {
+		width: 402px;
+		margin: 0 auto;
+		position: relative;
+		form fieldset{
+			border: 0;
+			position: relative;	
+			legend {
+				height: 68px;
+				line-height: 68px;
+				font-size: 20px;
+				color: #523299;
+				i {
+					background: url("/images/sprit.png") no-repeat 0 -507px;
+					display: block;
+					float: left;
+					width: 35px;
+					height: 42px;
+					margin-top: 10px;
+				}
+				span {
+					float: left;
+				}
+				a {
+					font-size: 12px;
+					float: left;
+				}
+				.dx {margin-left: 157px;}
+				.mm {margin-left: 15px;}
+			}
+			input {
+				float: left;
+				width: 380px;
+				height: 39px;
+				border: 1px solid #ccc;
+				margin-bottom: 20px;
+				padding-left: 20px;
+			}
+			label {
+				width: 402px;
+				float: left;
+				overflow: hidden;
+				color: #666;
+				input[type="checkbox"] {
+					width: 15px;
+					height: 15px;
+					margin-right: 10px;
+					margin-bottom: 32px;
+				}
+				a {
+					float: right;
+					color: #07a6df;
+				}
+			}
+			.submit {
+				width: 402px;
+				border: 0;
+				height: 50px;
+				background: #f49f26;
+				color: #fff;
+				line-height: 50px;
+				padding-left: 0;
+				font-size: 20px;
+			}
+		}
+		.wx {
+			line-height: 32px;
+			overflow: hidden;
+			span {
+				float: left;
+				font-size: 14px;
+				color: #666;
+				margin-left: 15px;
+			}
+			button {
+				float: left;
+				border: 0;
+				width: 100px;
+				height: 32px;
+				margin-left: 15px;
+			}
+			.wxin {background: url("/images/weix.jpg") no-repeat;}
+			.qq {background: url("/images/qq.jpg") no-repeat;}
+		}
+		p {
+			color: #f00;
+			line-height: 15px;
+			height: 15px;
+			background: url("/images/gth.png") no-repeat left center;
+			padding-left: 21px;
+			margin-top: 20px;
+		}
+		.submit_notice {
+			display: none;
+			left: 10px;
+			top: 290px;
+			position: absolute;
+		}
+	}
+}

@@ -1,0 +1,88 @@
+.main {
+	height: 660px;
+	background-color: #f9f9f9;
+	form {
+		width: 402px;
+		margin: 0 auto;
+		fieldset {
+			border: 0;
+			position: relative;	
+			.phone_notice {
+				position: absolute;
+				left: 20px;
+				top: 109px;
+				text-align: center;
+				height: 16px;
+				line-height: 16px;
+				display: none;
+				color: #f00;
+			}		
+			legend {
+				height: 68px;
+				line-height: 68px;
+				font-size: 20px;
+				color: #523299;
+				span {
+					background: url("/images/sprit.png") no-repeat 0 -507px;
+					display: block;
+					float: left;
+					width: 35px;
+					height: 42px;
+					margin-top: 10px;
+				}
+			}
+			input {
+				float: left;
+				width: 380px;
+				height: 39px;
+				border: 1px solid #ccc;
+				margin-bottom: 20px;
+				padding-left: 20px;
+			}
+			.validate {
+				width: 220px;
+				margin-right: 18px;
+			}
+			.generate {
+				width: 140px;
+				background: #724a88;
+				color: #fff;
+				border: 0;
+				padding-left: 0;
+				height: 41px;
+			}
+			label {
+				float: left;
+				overflow: hidden;
+				color: #666;
+				input[type="checkbox"] {
+					width: 15px;
+					height: 15px;
+					margin-right: 10px;
+					margin-bottom: 32px;
+				}
+				a {
+					margin-left: 25px;
+					color: #07a6df;
+				}
+			}
+			.submit {
+				width: 402px;
+				border: 0;
+				height: 50px;
+				background: #f49f26;
+				color: #fff;
+				line-height: 50px;
+				padding-left: 0;
+			}
+		}
+	}
+	.submit_notice {
+		width: 402px;
+		height: 30px;
+		line-height: 30px;
+		color: #f00;
+		margin: 0 auto;
+		display: none;
+	}
+}

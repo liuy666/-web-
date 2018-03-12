@@ -169,7 +169,7 @@ $height : 40px;
 			background-color: yellowgreen;
 		}
 		// 精选
-		.choiceness, .gxyj, .pznz{
+		.choiceness, .gxyj, .pznz, .clnz, .nywz, .myet, .hwyd, .nnxx{
 			h2 {
 				height: 63px;
 				line-height: 63px;
@@ -193,7 +193,7 @@ $height : 40px;
 				}
 			}
 		}
-		.gxyj, .pznz {
+		.gxyj, .pznz, .clnz, .nywz, .myet, .hwyd, .nnxx{
 			ul { // 光学眼镜
 				overflow: hidden;
 				li {
@@ -204,9 +204,9 @@ $height : 40px;
 					dl {	
 						dt {
 							height: 204px;
+							overflow: hidden;
 							margin-bottom: 15px;
 							img {
-								width: 204px;
 								height: 204px;
 							}
 						}
@@ -225,8 +225,7 @@ $height : 40px;
 							dt {
 								margin-bottom: 0;
 								img {
-									width: 423px;
-									height: 204px;
+									margin-left: -90px;
 								}
 							}
 							dd {

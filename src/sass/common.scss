@@ -125,6 +125,38 @@ header {
 	}
 }
 
+// .header样式，用于登录、注册页面头部--lrHeader.html
+.header {
+	border-bottom: 1px solid #ccc;
+	.wrap {
+		width: 1197px;
+		margin: 0 auto;
+		height: 98px;
+		.logo {
+			float: left;
+			margin-top: 24px;
+			a {
+				display: block;
+				width: 239px;
+				height: 51px;
+				background: url("/images/logo.png") no-repeat center center;
+				span {display: none;}
+			}
+		}
+		p {
+			float: right;
+			line-height: 98px;
+			color: #8c8292;
+			a {
+				color: #8c8292;
+				&:hover {
+					color: red;
+					text-decoration: underline;
+				}
+			}
+		}
+	}
+}
 // footer样式，用于所有页面尾部--footer.html
 footer {
 	height: 440px;

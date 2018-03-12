@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="必要;必要商城;必要平台;必要电商" />
+	<meta name="description" content="必要商城是一家C2M模式的电子商务平台">
+	<title>必要 - 买大牌制造商产品，上必要</title>
+	<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+	<link rel="stylesheet" type="text/css" href="/css/common.css">
+	<link rel="stylesheet" type="text/css" href="/css/register.css">
+	<script type="text/javascript" src="/lib/requirejs/require.js" data-main="/js/register"></script>
+</head>
+<body>
+	<!-- 加载头部 -->
+	<div class="header"></div>
+	<!-- 页面主体 -->
+	<div class="main">
+		<form>
+			<fieldset>
+				<legend><span></span>新用户注册</legend>
+				<input type="text" name="phoneNumber" class="phoneNumber" placeholder="请输入手机号" /><br/>
+				<input type="text" name="validateCode" class="validate" placeholder="请输入短信验证码" disabled />
+				<input type="button" name="" value="获取验证码" class="generate"  disabled /><br/>
+				<input type="password" name="password" placeholder="请输入6-32位登录密码" class="password" /><br/>
+				<input type="password" name="verify" placeholder="请再次输入登录密码"  class="verify" /><br/>
+				<label><input type="checkbox" name="checkbox" checked /> 我已阅读并同意<a href="#">《必要服务协议》</a></label><br/>
+				<input type="submit" name="submit" class="submit" value="注册" />
+				<p class="phone_notice"></p>
+			</fieldset>
+		</form>
+		<div class="submit_notice"></div>
+	</div>
+	<!-- 加载底部 -->
+	<footer></footer>
+</body>
+</html>
