@@ -1,5 +1,5 @@
 require(["config"],function(){
-	require(["template","jquery","load"],function(template,$){
+	require(["template","jquery","load"],function(template){
 		$(function(){
 			// 动态加载商品数据并渲染
 			$.get({

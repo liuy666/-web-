@@ -169,7 +169,7 @@ $height : 40px;
 			background-color: yellowgreen;
 		}
 		// 精选
-		.choiceness, .gxyj, .pznz, .clnz, .nywz, .myet, .hwyd, .nnxx{
+		.choiceness, .gxyj, .pznz, .clnz, .nywz, .myet, .hwyd, .nnxx, .pjhj, .cxbb, .mzxh, .grhl, .jjsh, .cjsj, .shjd, .cdps, .qcps, .jzwj, .jjjc, .smpj{
 			h2 {
 				height: 63px;
 				line-height: 63px;
@@ -193,7 +193,7 @@ $height : 40px;
 				}
 			}
 		}
-		.gxyj, .pznz, .clnz, .nywz, .myet, .hwyd, .nnxx{
+		.gxyj, .pznz, .clnz, .nywz, .myet, .hwyd, .nnxx, .pjhj, .cxbb, .mzxh, .grhl, .jjsh, .cjsj, .shjd, .cdps, .qcps, .jzwj, .jjjc, .smpj{
 			ul { // 光学眼镜
 				overflow: hidden;
 				li {
@@ -201,6 +201,7 @@ $height : 40px;
 					margin: 0 0 15px 15px;
 					width: 204px;
 					background-color: #fff;
+					>i {display: none;}
 					dl {	
 						dt {
 							height: 204px;

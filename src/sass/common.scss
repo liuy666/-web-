@@ -2,9 +2,9 @@
 
 // 重置样式
 html, body, ul, li, dl, dd, dt, p, h1, h2, h3, h4, h5, h6, form, fieldset, legend, img,span,i,input,select,textarea,div { margin:0; padding:0;}
-body{font:12px "Microsoft YaHei";}
+body{font:12px "Microsoft YaHei";color:#666;}
 ul{list-style:none;}
-h1, h2, h3, h4, h5, h6,i{font-style:normal; font-weight:normal;}
+h1, h2, h3, h4, h5, h6,i,em{font-style:normal; font-weight:normal;}
 a{color:#666; text-decoration:none;}
 img{border:none;}
 
@@ -13,6 +13,7 @@ $bStyle : 1px solid #fff;
 $hHeader : 30px;
 header {
 	height : 135px;
+	box-shadow: 0 5px 5px -5px rgba(0,0,0,0.3);
 	.head-top-wrap {
 		background-color: #333;
 		.head-top {
@@ -69,7 +70,6 @@ header {
 			}
 		}
 	}
-	
 	.head-bottom {
 		background-color: #fff;
 		width: 1080px;

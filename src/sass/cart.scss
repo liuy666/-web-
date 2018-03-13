@@ -1,0 +1,15 @@
+.main {
+	width: 1200px;
+	margin: 0 auto;
+	background: #f2f2f2;
+	position: relative;
+	height: 2000px;
+	.cover {
+		width: 600px;
+		height: 96px;
+		position: absolute;
+		right: 0;
+		top: -100px;
+		background: red;
+	}
+}
