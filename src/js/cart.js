@@ -1,16 +1,23 @@
 require(["config"],function(){
 	require(["jquery","template","load","cookie"],function($,tmp){
 		$(function(){
+			// 更改头部
+			// $(".search").hide();
+
+			// 读取cookie
 			$.cookie.json = true;
 			let _cookie = $.cookie("proMsg");
-			// 判断购物车是否有商品
-			if(_cookie === undefined || _cookie === "[]"){
+
+			// 判断本地cookie是否为空
+			if(_cookie === undefined || _cookie.length === 0){
 				$(".empty").show();
 				$(".notEmpty").hide();
 			}else{
 				$(".empty").hide();
 				$(".notEmpty").show();
 			}
+
+			// 引导跳转
 			$(".empty .login").click(function(){
 				location = "/html/login.html";
 				return false;
@@ -20,65 +27,130 @@ require(["config"],function(){
 				return false;
 			});
 
+			// 从cookie中读取数据并做渲染
 			let tmpHtml = tmp("tmpid",_cookie);
 			$(".shops").after(tmpHtml);
-			$(".subtotal").text($(".totalprice").text());
-			$(".total em").text($(".totalprice").text());
 
-			//为所有数量修改 / 删除操作 添加事件句柄
-			let tbody = $("tbody");
+			// 更新商品总价、合计、总数量
+			update();
+	
+			function update(){
+
+				// 累加计算购物车内所有商品的小计
+				let totalArr = Array.from($(".totalprice")),
+					totalValue = totalArr.reduce(function(accumulate,curr){
+					return accumulate + Number(curr.innerText.slice(1));
+				},0);
+				$(".subtotal").text("¥" + totalValue);
+				$(".total_price").text("¥" + totalValue);
+
+				// 累加计算购物车内所有商品的数量
+				let totalInput = Array.from($(".input")),
+					totalAmount = totalInput.reduce(function(accumulate,curr){
+					return accumulate + Number(curr.value);
+				},0);
+				$(".amount").text(totalAmount);
+			}
+
+			
+
+			// 增加
 			$(".add").click(function(){
 				let _input = $(this).siblings("input"),
-					_val = Number(_input.val()) + 1;
-				_input.val(_val);
-				$(".totalprice").text("¥" + _val * Number($(".price").text().slice(1)));
-				console.log(_cookie);
-				let pid = $(this).parents(".detail").find(".pid").text();
+					_price = $(this).parents(".detail").find(".price"),
+					_totalprice = $(this).parents(".detail").find(".totalprice"),
+					_value = Number(_input.val()) + 1,
+					_pid = $(this).parents(".detail").find(".pid").text();
+
+				// 修改相应的显示数量、小计值
+				_input.val(_value);
+				_totalprice.text("¥" + _value * Number(_price.text().slice(1)));
+				
+				// 修改cookie
 				_cookie.forEach(function(curr){
-					if(curr.pid == pid)
-						curr.amount = _val;
+					if(curr.pid == _pid)
+						curr.amount = _value;
 				});
+
+				// 保存cookie
 				$.cookie("proMsg",_cookie,{expires : 7, path : "/"});
-				$(".subtotal").text($(".totalprice").text());
-				$(".total em").text($(".totalprice").text());
+				update();
 			});
 
+			// 减少
 			$(".sub").click(function(){
-				let _input = $(this).siblings("input");
-					_val = Number(_input.val()) - 1;
-				if(_val < 1)
-					_val = 1;
-				_input.val(_val);
-				$(".totalprice").text("¥" + _val * Number($(".price").text().slice(1)));
-				let pid = $(this).parents(".detail").find(".pid").text();
+				let _input = $(this).siblings("input"),
+					_price = $(this).parents(".detail").find(".price"),
+					_totalprice = $(this).parents(".detail").find(".totalprice"),
+					_value = Number(_input.val()) - 1,
+					_pid = $(this).parents(".detail").find(".pid").text();
+				if(_value < 1)
+					_value = 1;
+
+				// 修改相应的显示数量、小计值
+				_input.val(_value);
+				_totalprice.text("¥" + _value * Number(_price.text().slice(1)));
+				
+				// 修改cookie
 				_cookie.forEach(function(curr){
-					if(curr.pid == pid)
-						curr.amount = _val;
+					if(curr.pid == _pid)
+						curr.amount = _value;
 				});
+
+				// 保存cookie
 				$.cookie("proMsg",_cookie,{expires : 7, path : "/"});
-				$(".subtotal").text($(".totalprice").text());
-				$(".total em").text($(".totalprice").text());
+				update();
 			});
 
+			// 直接修改
 			$(".input").blur(function(){
 				let regexp = /^[1-9]\d*$/,
-					_val = $(this).val();
-				if(!regexp.test(_val)){
-					// 不合法则弹出警告框，并重置数量
-					alert("你输入不合法的数量，请重新输入！")
-					$(this).val("1");
+			 		_value = $(this).val(),
+					_price = $(this).parents(".detail").find(".price"),
+					_totalprice = $(this).parents(".detail").find(".totalprice"),
+					_pid = $(this).parents(".detail").find(".pid").text();
+
+				// 不合法则弹出警告框，并重置数量
+				if(!regexp.test(_value)){
+					alert("请输入合法数量值！");
+					_value = 1;
 				}
-				$(".totalprice").text("¥" + _val * Number($(".price").text().slice(1)));
-				let pid = $(this).parents(".detail").find(".pid").text();
+
+				// 修改相应的显示数量、小计值
+				$(this).val(_value);
+				_totalprice.text("¥" + _value * Number(_price.text().slice(1)));
+				
+				// 修改cookie
 				_cookie.forEach(function(curr){
-					if(curr.pid == pid)
-						curr.amount = _val;
+					if(curr.pid == _pid)
+						curr.amount = _value;
 				});
+
+				// 保存cookie
 				$.cookie("proMsg",_cookie,{expires : 7, path : "/"});
-				$(".subtotal").text($(".totalprice").text());
-				$(".total em").text($(".totalprice").text());
+				update();
 			});
-			
+
+			// 删除
+			$(".del").click(function(){
+				let _pid = $(this).parents(".detail").find(".pid").text(),
+				 	index;
+
+				index = exist(_cookie,_pid);
+				_cookie.splice(index,1);
+				$(this).parents(".detail").remove();
+
+				if(_cookie.length === 0){
+					$(".empty").show();
+					$(".notEmpty").hide();
+					location.reload();
+				}
+
+				// 保存cookie
+				$.cookie("proMsg",_cookie,{expires : 7, path : "/"});
+				update();
+			});
+
 			// 判断数组中是否存在某项，没有返回-1
 			function exist(arr,id){
 				for(let i = 0,len = arr.length; i < len; i++){

@@ -47,7 +47,7 @@
 								<td><img src="{{pro.img}}" alt="" style="width: 100px; height: 100px;"></td>
 								<td>
 									<div class="pid" style="display: none;">{{pro.pid}}</div>
-									<div class="pname">{{pro.name}}</div>
+									<div class="pname">{{pro.title}}</div>
 									<div class="color">颜色:红黑旗舰款</div>
 									<div class="size">尺寸:{{pro.size}}</div>
 								</td>
@@ -60,7 +60,7 @@
 									</div>
 								</td>
 								<td class="totalprice">¥{{pro.price * pro.amount}}</td>
-								<td><i></i></td>
+								<td><i class="del"></i></td>
 							</tr>
 							{{/each}}
 						</script>
@@ -68,9 +68,9 @@
 					<tfoot>
 						<tr>
 							<td><input type="checkbox" checked /></td>
-							<td colspan="3">全选 删除</td>
-							<td>商品总数<span class="amount">1</span>件</td>
-							<td>商品总价：<span class="subtotal">¥399</span></td>
+							<td colspan="3">全选删除</td>
+							<td>商品总数<span class="amount">0</span>件</td>
+							<td>商品总价：<span class="subtotal">0</span></td>
 							<td></td>
 						</tr>
 					</tfoot>
@@ -78,7 +78,7 @@
 				<div class="total">
 					<button class="continue">继续购物</button>
 					<span>合计：</span>
-					<em>¥ 399</em>
+					<span class="total_price">0</span>
 					<button class="js">结算</button>
 				</div>
 			</div>

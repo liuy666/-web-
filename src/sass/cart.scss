@@ -91,7 +91,7 @@
 								line-height: 21px;
 								height: 21px;
 							}
-							i {	
+							.del {	
 								display: block;
 								width: 36px;
 								height: 28px;
@@ -102,6 +102,7 @@
 								height: 30px;
 								width: 104px;
 								border: 1px solid #ccc;
+								cursor: pointer;
 								span {
 									float: left;
 									width: 27px;
@@ -137,8 +138,13 @@
 				tfoot tr{
 					height: 52px;
 					border-bottom: 1px solid #ccc;
+					td:nth-child(2) {color: #f00;}
 					td:nth-child(3), td:nth-child(4) {
 						text-align: center;
+						span {
+							margin: 0 2px;
+							color: #f00;
+						}
 					}
 				}
 			}
@@ -157,11 +163,12 @@
 				}
 				span {
 					float: left;
-					margin: 5px 0 0 730px;
 					font-size: 14px;
+					&:nth-of-type(1) {
+						margin: 4px 0 0 730px;
+					}
 				}
-				em {
-					float: left;
+				.total_price {
 					color: #f49f26;
 					font-size: 20px;
 				}
