@@ -1,15 +1,180 @@
 .main {
-	width: 1200px;
-	margin: 0 auto;
-	background: #f2f2f2;
-	position: relative;
-	height: 2000px;
-	.cover {
-		width: 600px;
-		height: 96px;
-		position: absolute;
-		right: 0;
-		top: -100px;
-		background: red;
+	background: #f9f9f9;
+	border-top: 1px solid #ccc;
+	.wrap {
+		position: relative;
+		width: 1080px;
+		margin: 0 auto;
+		min-height: 620px;
+		box-sizing: border-box;
+		padding-top: 19px;
+		.cover {
+			width: 600px;
+			height: 96px;
+			position: absolute;
+			right: 0;
+			top: -100px;
+			background: red;
+		}
+		.empty {
+			width: 440px;
+			margin: 144px auto 0;
+			text-align: center;
+			p {
+				font-size: 14px;
+				line-height: 34px;
+				height: 34px;
+				padding-left: 30px;
+				margin-bottom: 22px;
+				background: url("/images/shoppingcart.png") no-repeat left center;
+				.login {
+					color: #07a6df;
+					font-weight: bold;
+					margin: 0 5px;
+				}
+			}
+			.toBuy {
+				width: 120px;
+				height: 40px;
+				border: 0;
+				background: #724a88;
+				color: #fff;
+			}
+		}
+		.notEmpty {
+			display: none;
+			h3 {
+				height: 47px;
+				line-height: 47px;
+				font-size: 18px;
+				border-bottom: 1px solid #ccc;
+			}
+			table {
+				border-collapse: collapse;
+				width: 1080px;
+				margin-top: 10px;
+				input {float: left;}
+				thead tr {
+					height: 37px;
+					th {
+						font-weight: normal;
+						&:nth-child(2) {
+							width: 130px;
+							text-align: left;
+						}
+						&:nth-child(3) {text-align: left;}
+						&:nth-child(5) {width: 100px;}
+						&:nth-child(6) {width: 130px;}
+						&:nth-child(7) {width: 36px;}
+					}
+				}
+				tbody {
+					.shops {
+						height: 35px;
+						background: #eee;
+						border-bottom: 1px solid #ccc;
+					}
+					.detail {
+						height: 120px;
+						border-bottom: 1px dotted #ccc;
+						td {
+							text-align: center;
+							&:nth-child(3), &:nth-child(2){
+								text-align: left;
+							}
+							.pname {
+								line-height: 34px;
+								height: 34px;
+								color: #52346a;
+							}
+							.size, .color {
+								line-height: 21px;
+								height: 21px;
+							}
+							i {	
+								display: block;
+								width: 36px;
+								height: 28px;
+								background: url("/images/a_delete.png") no-repeat left -3px;
+								&:hover {background: url("/images/a_delete.png") no-repeat left -25px}
+							}
+							.operate {
+								height: 30px;
+								width: 104px;
+								border: 1px solid #ccc;
+								span {
+									float: left;
+									width: 27px;
+									height: 30px;
+									line-height: 30px;
+									background: url("/images/commonSprite.png") no-repeat;
+								}
+								.sub {
+									border-right: 1px solid #ccc;
+									background-position: 4px -40px;	
+									&:hover {background-position: 4px -20px;}
+								}
+								.add {
+									border-left: 1px solid #ccc;
+									background-position: -16px -40px;
+									&:hover {background-position: -16px -20px;}
+								}
+								input {
+									border: 0;
+									outline: none;
+									width: 48px;
+									height: 30px;
+									text-align: center;
+								}
+							}
+						}
+						.price, .totalprice {
+							color: #f49f26;
+							font-size: 16px;
+						}
+					}
+				}
+				tfoot tr{
+					height: 52px;
+					border-bottom: 1px solid #ccc;
+					td:nth-child(3), td:nth-child(4) {
+						text-align: center;
+					}
+				}
+			}
+			.total {
+				height: 40px;
+				background: #eeecef;
+				padding-top: 10px;
+				.continue {
+					width: 100px;
+					height: 33px;
+					background: #724a88;
+					color: #fff;
+					border: 0;
+					float: left;
+					margin-left: 10px;
+				}
+				span {
+					float: left;
+					margin: 5px 0 0 730px;
+					font-size: 14px;
+				}
+				em {
+					float: left;
+					color: #f49f26;
+					font-size: 20px;
+				}
+				.js {
+					width: 86px;
+					height: 33px;
+					color: #fff;
+					background: #f49f26;
+					border: 0;
+					float: right;
+					margin-right: 10px;
+				}
+			}
+		}
 	}
 }

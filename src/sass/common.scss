@@ -13,7 +13,6 @@ $bStyle : 1px solid #fff;
 $hHeader : 30px;
 header {
 	height : 135px;
-	box-shadow: 0 5px 5px -5px rgba(0,0,0,0.3);
 	.head-top-wrap {
 		background-color: #333;
 		.head-top {
@@ -34,21 +33,22 @@ header {
 			.right {
 				float: right;
 				height: $hHeader;
-				li:nth-child(5) a {
+				.loginAfter, .registerAfter {display:none;}
+				li:nth-child(7) a {
 					padding-right: 0;
 				}
-				li:nth-child(3) a {
+				li:nth-child(5) a {
 					border-left: $bStyle;
 					border-right: $bStyle;
 				}
-				li:nth-child(4) {
+				li:nth-child(6) {
 					background: url("/images/msgcenter.png") no-repeat 24px center;
 					padding-left: 34px;
 					span {
 						margin-left: 10px;
 					}
 				}
-				li:nth-child(5) {
+				li:nth-child(7) {
 					background:#523669 url("/images/shopCar.png") no-repeat 15px center;
 					padding-left: 21px;
 					span {
@@ -74,7 +74,7 @@ header {
 		background-color: #fff;
 		width: 1080px;
 		margin: 0 auto;
-		overflow : hidden;
+		height: 97px;
 		.logo {
 			width: 239px;
 			float: left;
@@ -97,6 +97,29 @@ header {
 				margin-bottom: 11px;
 				border: 1px solid #ccc;
 				border-radius: 3px;
+				position: relative;
+				.drop{
+				    position: absolute;
+				    top: 39px;
+				    left: -1px;
+				    width: 500px;
+				    max-height: 150px;
+				    overflow-y : scroll;
+				    background-color: #f9f9f9;
+				    z-index: 15;
+				    line-height: 30px;
+				    font-size: 14px;
+				    padding-left: 10px;
+				    box-sizing: border-box;
+				    color: #666;
+				    border-radius: 4px;
+				    cursor: pointer;
+				    span{
+					    height: 30px;
+					    display: block;
+					    width: 383px;
+					}
+				}
 				input {
 					height: 38px;
 					border: 0;

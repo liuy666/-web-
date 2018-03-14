@@ -100,7 +100,7 @@
 			"classify_title":"斯凯奇、Saucony等&nbsp;&nbsp;制造商直供",
 			"products":[
 				{"pid":7001, "title": "Rp-s1全马级别专业跑鞋男", "price":269, "img":"http://bfs.biyao.com/group1/M00/25/23/rBACYVoyPtCAWKL5AABdm607OcI608.jpg"},
-				{"pid":6002, "title": "RC女士瑜伽长裤", "price":459, "img":"http://bfs.biyao.com/group1/M00/22/95/rBACVFomCYmAC0N9AABAE1RzC7E568.jpg"},
+				{"pid":7002, "title": "RC女士瑜伽长裤", "price":459, "img":"http://bfs.biyao.com/group1/M00/22/95/rBACVFomCYmAC0N9AABAE1RzC7E568.jpg"},
 				{"pid":7003, "title": "男士休闲软壳夹克", "price":419, "img":"http://bfs.biyao.com/group1/M00/2B/99/rBACVFp8BdSAdIAQAACJwhGcbic761.jpg"},
 				{"pid":7004, "title": "男子休闲运动长裤", "price":189, "img":"http://bfs.biyao.com/group1/M00/29/04/rBACYVpTRfyAB_zTAABywjr-wwE828.jpg"},
 				{"pid":7005, "title": "轻薄透气跑步袜×3", "price":169, "img":"http://bfs.biyao.com/group1/M00/00/FA/wKhkVFkKwQuAPkyOAAB0A1nRO9Y763.jpg"},
@@ -222,19 +222,83 @@
 			]
 		},
 		{
+			"className":"qcps",
+			"classify_name":"汽车配饰",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2B/72/rBACW1pq7xiAT06xAADFx17YnBg351.jpg",
+			"classify_title":"BBA等&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":1601, "title": "车载手机支架 (出风口版)", "price":49, "img":"http://bfs.biyao.com/group1/M00/1D/97/rBACYVnM7daAEZTgAABOFNchAnU039.jpg"},
+				{"pid":1602, "title": "【配套】汽车骨形头枕一对", "price":68, "img":"http://bfs.biyao.com/group1/M00/24/97/rBACVFpAXkSASmkzAAA97Cf-VRQ034.jpg"},
+				{"pid":1603, "title": "多用途微米级纤维清洁巾X6", "price":49, "img":"http://bfs.biyao.com/group1/M00/29/02/rBACYVpTNzuANSlfAACLuaDV_Vo172.jpg"},
+				{"pid":1604, "title": "汽车清洁套装", "price":59, "img":"http://bfs.biyao.com/group1/M00/1F/1B/rBACVFn8IPSAdYP_AACPSgKWkPs215.jpg"},
+				{"pid":1605, "title": "超静音双层定制汽车脚垫", "price":658, "img":"http://bfs.biyao.com/group1/M00/25/DE/rBACW1o7bv6AVNGNAABWe_XOCfs291.jpg"},
+				{"pid":1606, "title": "双口高通QC3.0快充车充", "price":79, "img":"http://bfs.biyao.com/group1/M00/01/F6/rBACYVkT4XyAViP8AACTA3TQRpc201.jpg"},
+				{"pid":1607, "title": "轮毂刷 轮胎刷 海绵檫3件", "price":49, "img":"http://bfs.biyao.com/group1/M00/28/33/rBACYVpMPmKAe2_yAACXIqZiU20685.jpg"},
+				{"pid":1608, "title": "舒适冰丝通用型汽车座垫", "price":428, "img":"http://bfs.biyao.com/group1/M00/25/DE/rBACW1o7cQKAFD-7AABDVuREZQw589.jpg"}
+			]
+		},
+		{
+			"className":"jzwj",
+			"classify_name":"家装五金",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2E/3E/rBACW1qQ7-mAZNH8AADRgWUs6sQ900.jpg",
+			"classify_title":"KOHLER卫浴等&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":1701, "title": "西班牙超薄防撞吸顶灯", "price":219, "img":"http://bfs.biyao.com/group1/M00/23/5A/rBACW1oU_UaALOCEAABHUz3PaIg441.jpg"},
+				{"pid":1702, "title": "304不锈钢免钉门后挂钩", "price":78, "img":"http://bfs.biyao.com/group1/M00/2C/93/rBACYVp1ZpuAA-aOAAA_AhmbZd4507.jpg"},
+				{"pid":1703, "title": "双用不锈钢地漏防虫防臭", "price":49, "img":"http://bfs.biyao.com/group1/M00/21/88/rBACW1oBda-AFj8HAAB68_VQCiQ117.jpg"},
+				{"pid":1704, "title": "多色温护眼灯", "price":269, "img":"http://bfs.biyao.com/group1/M00/1C/61/rBACVFncYWWAPIpzAAAbTX9hP8Q877.jpg"},
+				{"pid":1705, "title": "强力吸盘式多用挂架置物架", "price":49, "img":"http://bfs.biyao.com/group1/M00/12/91/rBACVFlDjjKAV0QqAABZR8opsTQ657.jpg"},
+				{"pid":1706, "title": "28件套精密螺丝批", "price":89, "img":"http://bfs.biyao.com/group1/M00/01/EC/rBACYVkT4UaATvd9AACdJT8PZKI310.jpg"},
+				{"pid":1707, "title": "北欧风简约挂钟", "price":109, "img":"http://bfs.biyao.com/group1/M00/26/99/rBACYVpCEIKAE4xGAACbQIcw2tY758.jpg"},
+				{"pid":1708, "title": "防儿童触电墙壁插座", "price":99, "img":"http://bfs.biyao.com/group1/M00/15/D3/rBACW1lYdemAfez1AABHtvhHpv0879.jpg"}
+			]
+		},
+		{
+			"className":"jjjc",
+			"classify_name":"家具建材",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ79WASJ4ZAACwhGNSnxk240.jpg",
+			"classify_title":"MUJI等&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":1801, "title": "cozleep 豪华酒店床垫25CM", "price":2099, "img":"http://bfs.biyao.com/group1/M00/2C/8D/rBACW1p1INCAded8AABZRnYc3ak340.jpg"},
+				{"pid":1802, "title": "简洁百搭电脑椅", "price":379, "img":"http://bfs.biyao.com/group1/M00/01/F6/rBACW1kT4XuAWXxnAABl1y5pY7Y620.jpg"},
+				{"pid":1803, "title": "随意组合沙发", "price":799, "img":"http://bfs.biyao.com/group1/M00/1D/AC/rBACVFnwBViARZdGAABxqDuRb0A781.jpg"},
+				{"pid":1804, "title": "经济型床垫", "price":1399, "img":"http://bfs.biyao.com/group1/M00/27/A3/rBACVFpXLIOAOByGAABxr0N5Bnk530.jpg"},
+				{"pid":1805, "title": "午小睡，上班躺着睡", "price":899, "img":"http://bfs.biyao.com/group1/M00/1E/3D/rBACVFn4D3uAL3cuAAB51j3h38I420.jpg"},
+				{"pid":1806, "title": "胡桃木写字桌", "price":1399, "img":"http://bfs.biyao.com/group1/M00/11/41/rBACYVkkAaWAQQOzAAAt6Tf71SY746.jpg"},
+				{"pid":1807, "title": "懒人豆袋椅", "price":239, "img":"http://bfs.biyao.com/group1/M00/23/B3/rBACVFo3JfKAawaIAACf3IqU0_Q025.jpg"},
+				{"pid":1808, "title": "白橡实木床", "price":1999, "img":"http://bfs.biyao.com/group1/M00/0F/49/rBACYVkZS2OAeM5SAAB4iT6h9iE939.jpg"}
+			]
+		},
+		{
+			"className":"smpj",
+			"classify_name":"数码配件",
+			"classify_img":"http://bfs.biyao.com/group1/M00/2C/8C/rBACVFqQ79WASJ4ZAACwhGNSnxk240.jpg",
+			"classify_title":"MUJI等&nbsp;&nbsp;制造商直供",
+			"products":[
+				{"pid":1901, "title": "音思客蓝牙耳机", "price":349, "img":"http://bfs.biyao.com/group1/M00/22/98/rBACVFomH_mATbUQAABHBs5FCzE871.jpg"},
+				{"pid":1902, "title": "iPhone充电宝手机背夹", "price":118, "img":"http://bfs.biyao.com/group1/M00/22/AF/rBACW1oMqKKARMdMAAAsT1jV_r8884.jpg"},
+				{"pid":1903, "title": "双向快充移动电源充电宝", "price":149, "img":"http://bfs.biyao.com/group1/M00/2A/0D/rBACW1pf_RuAd82HAABOuiLZFk4458.jpg"},
+				{"pid":1904, "title": "13寸毛毡笔记本电包", "price":49, "img":"http://bfs.biyao.com/group1/M00/01/EC/rBACYVkT4UKAerRPAACM47BVkcU742.jpg"},
+				{"pid":1905, "title": "白色苹果数据线", "price":49, "img":"http://bfs.biyao.com/group1/M00/00/3D/rBACVFkT4XyAE9mNAACaLm2bJCM186.jpg"},
+				{"pid":1906, "title": "4K鱼眼手机微距镜头", "price":159, "img":"http://bfs.biyao.com/group1/M00/27/D3/rBACVFpbH7WAHsQKAABGpQv2vZU948.jpg"},
+				{"pid":1907, "title": "HIFI动圈mini耳机", "price":99, "img":"http://bfs.biyao.com/group1/M00/20/8A/rBACVFoGl3eAER1mAABTIjSCsWQ216.jpg"},
+				{"pid":1908, "title": "Mini蓝牙便携音箱/音响", "price":349, "img":"http://bfs.biyao.com/group1/M00/29/91/rBACVFppvTGAfzLXAAAv5iRAxII867.jpg"}
+			]
+		},
+		{
 			"className":"cdps",
 			"classify_name":"穿搭配饰",
 			"classify_img":"http://bfs.biyao.com/group1/M00/2E/3E/rBACW1qQ8AiAApAwAADKjGiE6Po946.jpg",
 			"classify_title":"COACH、Kipling等&nbsp;&nbsp;制造商直供",
 			"products":[
-				{"pid":1601, "title": "BRW 经典山茶花桑蚕丝围巾", "price":249, "img":"http://bfs.biyao.com/group1/M00/2C/25/rBACVFp_6LOAUQkuAABkxI1n6hU442.jpg"},
-				{"pid":1602, "title": "桑蚕丝领带3条装", "price":199, "img":"http://bfs.biyao.com/group1/M00/00/38/rBACVFkT4WCAbhvVAACK_OgAX40598.jpg"},
-				{"pid":1603, "title": "300支钻石纹围巾  2色", "price":299, "img":"http://bfs.biyao.com/group1/M00/2C/3A/rBACVFqBQrSAQwmoAACfIhez38g273.jpg"},
-				{"pid":1604, "title": "高档奢侈品专用伞布", "price":149, "img":"http://bfs.biyao.com/group1/M00/17/A3/rBACVFmIbWqARaDYAAB9SEy44MM455.jpg"},
-				{"pid":1605, "title": "优雅小卷边时尚羊毛毡帽", "price":159, "img":"http://bfs.biyao.com/group1/M00/2F/FD/rBACW1ql6T2AVKxYAACaywkRJl0253.jpg"},
-				{"pid":1606, "title": "卉 爱之花园真丝方巾", "price":229, "img":"http://bfs.biyao.com/group1/M00/30/07/rBACYVqmKxmAG3E5AACffeSIC-0591.jpg"},
-				{"pid":1607, "title": "三折轻量扁型商旅伞", "price":99, "img":"http://bfs.biyao.com/group1/M00/2D/A1/rBACVFqeFYaACQloAABgTM7X4AI123.jpg"},
-				{"pid":1608, "title": "男士休闲简约自动扣皮带", "price":189, "img":"http://bfs.biyao.com/group1/M00/0F/B2/rBACVFkmZveACib_AAB6DHLjopo637.jpg"}
+				{"pid":2101, "title": "BRW 经典山茶花桑蚕丝围巾", "price":249, "img":"http://bfs.biyao.com/group1/M00/2C/25/rBACVFp_6LOAUQkuAABkxI1n6hU442.jpg"},
+				{"pid":2102, "title": "桑蚕丝领带3条装", "price":199, "img":"http://bfs.biyao.com/group1/M00/00/38/rBACVFkT4WCAbhvVAACK_OgAX40598.jpg"},
+				{"pid":2103, "title": "300支钻石纹围巾  2色", "price":299, "img":"http://bfs.biyao.com/group1/M00/2C/3A/rBACVFqBQrSAQwmoAACfIhez38g273.jpg"},
+				{"pid":2104, "title": "高档奢侈品专用伞布", "price":149, "img":"http://bfs.biyao.com/group1/M00/17/A3/rBACVFmIbWqARaDYAAB9SEy44MM455.jpg"},
+				{"pid":2105, "title": "优雅小卷边时尚羊毛毡帽", "price":159, "img":"http://bfs.biyao.com/group1/M00/2F/FD/rBACW1ql6T2AVKxYAACaywkRJl0253.jpg"},
+				{"pid":2106, "title": "卉 爱之花园真丝方巾", "price":229, "img":"http://bfs.biyao.com/group1/M00/30/07/rBACYVqmKxmAG3E5AACffeSIC-0591.jpg"},
+				{"pid":2107, "title": "三折轻量扁型商旅伞", "price":99, "img":"http://bfs.biyao.com/group1/M00/2D/A1/rBACVFqeFYaACQloAABgTM7X4AI123.jpg"},
+				{"pid":2108, "title": "男士休闲简约自动扣皮带", "price":189, "img":"http://bfs.biyao.com/group1/M00/0F/B2/rBACVFkmZveACib_AAB6DHLjopo637.jpg"}
 			]
 		}
 	]

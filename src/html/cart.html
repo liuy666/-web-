@@ -15,7 +15,74 @@
 	<header></header>
 	<!-- 页面主体 -->
 	<div class="main">
-		<div class="cover"></div>
+		<div class="wrap">
+			<div class="cover" style="display: none;"></div>
+			<div class="empty">
+				<p>您的购物车还是空的，<a href="#" class="login">登录</a>后将显示您之前加入的商品。</p>
+				<button class="toBuy">马上购物</button>
+			</div>
+			<div class="notEmpty">
+				<h3>购物车</h3>
+				<table class="cart" border="0" cellspacing="0" cellspacing="0">
+					<thead>
+						<tr>
+							<th><input type="checkbox" checked /></th>
+							<th>全选</th>
+							<th>商品信息</th>
+							<th>单价</th>
+							<th>数量</th>
+							<th>小计</th>
+							<th>操作</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr class="shops">
+							<td><input type="checkbox" checked /></td>
+							<td colspan="6" id="shops">商家： HKloss设计师品牌</td>
+						</tr>
+						<script type="text/html" id="tmpid">
+							{{each  as pro}}
+							<tr class="detail">
+								<td><input type="checkbox" checked /></td>
+								<td><img src="{{pro.img}}" alt="" style="width: 100px; height: 100px;"></td>
+								<td>
+									<div class="pid" style="display: none;">{{pro.pid}}</div>
+									<div class="pname">{{pro.name}}</div>
+									<div class="color">颜色:红黑旗舰款</div>
+									<div class="size">尺寸:{{pro.size}}</div>
+								</td>
+								<td class="price">¥{{pro.price}}</td>
+								<td>
+									<div class="operate">
+										<span class="sub"></span>
+										<input type="text" class="input" name="text" value="{{pro.amount}}" />
+										<span class="add"></span>
+									</div>
+								</td>
+								<td class="totalprice">¥{{pro.price * pro.amount}}</td>
+								<td><i></i></td>
+							</tr>
+							{{/each}}
+						</script>
+					</tbody>
+					<tfoot>
+						<tr>
+							<td><input type="checkbox" checked /></td>
+							<td colspan="3">全选 删除</td>
+							<td>商品总数<span class="amount">1</span>件</td>
+							<td>商品总价：<span class="subtotal">¥399</span></td>
+							<td></td>
+						</tr>
+					</tfoot>
+				</table>
+				<div class="total">
+					<button class="continue">继续购物</button>
+					<span>合计：</span>
+					<em>¥ 399</em>
+					<button class="js">结算</button>
+				</div>
+			</div>
+		</div>
 	</div>
 	<!-- 加载尾部 -->
 	<footer></footer>
