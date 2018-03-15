@@ -2,6 +2,7 @@
 
 // 导航
 .nav {
+	padding-top: 10px;
 	box-shadow: 0 5px 5px -5px rgba(0,0,0,0.3);
 	position: relative;
 	z-index: 10;
@@ -44,9 +45,11 @@ $height : 40px;
 		width: 1080px;
 		margin: 0 auto;
 		.banner { // banner部分
-			height: 360px;
-			background-color: red;
 			position: relative;
+			.banner_carousel {
+				overflow: hidden;
+				height: 360px;
+			}
 			.nav-list { // 第一层 ul
 				position: absolute;
 				left: 0;
@@ -166,7 +169,10 @@ $height : 40px;
 		.promotion { // 促销商品
 			height: 220px;
 			margin-bottom: 21px;
-			background-color: yellowgreen;
+			img{
+				float: left;
+				&:nth-child(2) {margin: 0 15px;}
+			}
 		}
 		// 精选
 		.choiceness, .gxyj, .pznz, .clnz, .nywz, .myet, .hwyd, .nnxx, .pjhj, .cxbb, .mzxh, .grhl, .jjsh, .cjsj, .shjd, .cdps, .qcps, .jzwj, .jjjc, .smpj{
@@ -186,10 +192,13 @@ $height : 40px;
 			position: relative;
 			li {
 				position: absolute;
+				left: 0;
+				top: 0;
 				width: 620px;
 				border-left: 10px solid #fff;
-				&:nth-child(1) {
-					border: none;
+				a {
+					display: block;
+					height: 280px;
 				}
 			}
 		}

@@ -1,5 +1,16 @@
 require(["config"],function(){
-	require(["jquery","load","cookie"],function($){
+	require(["jquery","load","cookie"],function($,load){
+		load.done(function(){
+			$(".head-top-wrap").hide();
+			$(".search").hide();
+			$(".head-bottom p").show();
+			$("header").css({
+				boxShadow : "0 5px 5px -5px rgba(0,0,0,0.3)",
+				zIndex : 15,
+				position : "relative"
+			});
+		});
+		
 		$(function(){
 				// 判断是否是手机号码
 			let pattern = /^((1[3,5,8][0-9])|(14[5,7])|(17[0,6,7,8])|(19[7]))\d{8}$/,

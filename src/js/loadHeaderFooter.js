@@ -1,6 +1,9 @@
 define(["jquery","cookie"],function(){
-	// 加载除登录、注册外的页面头部
-	$("header").load("/html/include/header.html",function(){
+	var loadHeader = $.ajax("/html/include/header.html").done(function(data){
+		// 渲染页面
+		$("header").html(data);
+	}).done(function(){
+		// 读取cookie
 		$.cookie.json = true;
 		let _cookie = $.cookie("userPhone"),
 			_proMsg = $.cookie("proMsg"),
@@ -13,7 +16,7 @@ define(["jquery","cookie"],function(){
 		}
 		if(_proMsg){
 			amountTotal = _proMsg.reduce(function(accumulator,curr){
-				return accumulator += curr.amount;
+				return accumulator + Number(curr.amount);
 			},0);
 			$(".right .shopping_cart").text(amountTotal);
 		}
@@ -24,7 +27,7 @@ define(["jquery","cookie"],function(){
 			$(".registerBefore").show();
 			$(".registerAfter").hide();
 		});
-
+	}).done(function(){		
 		// jsonp 调用淘宝搜索框接口
 		$(".search #search").keyup(function(){
 			let keyword = $(this).val(),
@@ -49,12 +52,12 @@ define(["jquery","cookie"],function(){
 				}
 				
 			});
-	});
+		});
 	});
 
-	// 加载登录、注册的页面头部
-	$(".header").load("/html/include/lrHeader.html")
+	var loadFooter = $.ajax("/html/include/footer.html").done(function(data){
+		$("footer").html(data);
+	});
 
-	// 加载页面尾部
-	$("footer").load("/html/include/footer.html");
+	return $.when(loadHeader,loadFooter);
 });

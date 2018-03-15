@@ -12,7 +12,6 @@ img{border:none;}
 $bStyle : 1px solid #fff;
 $hHeader : 30px;
 header {
-	height : 135px;
 	.head-top-wrap {
 		background-color: #333;
 		.head-top {
@@ -86,6 +85,19 @@ header {
 				background: url("/images/logo.png") no-repeat;
 				span {
 					display: none;
+				}
+			}
+		}
+		>p {
+			float: right;
+			line-height: 98px;
+			color: #8c8292;
+			display: none;
+			a {
+				color: #8c8292;
+				&:hover {
+					color: red;
+					text-decoration: underline;
 				}
 			}
 		}
@@ -166,18 +178,7 @@ header {
 				span {display: none;}
 			}
 		}
-		p {
-			float: right;
-			line-height: 98px;
-			color: #8c8292;
-			a {
-				color: #8c8292;
-				&:hover {
-					color: red;
-					text-decoration: underline;
-				}
-			}
-		}
+		
 	}
 }
 // footer样式，用于所有页面尾部--footer.html

@@ -1,9 +1,10 @@
 require(["config"],function(){
-	require(["jquery","template","load","cookie"],function($,tmp){
-		$(function(){
-			// 更改头部
-			// $(".search").hide();
+	require(["jquery","template","load","cookie"],function($,tmp, load){
+		load.done(function(){
+			$(".search").hide();
+		});
 
+		$(function(){
 			// 读取cookie
 			$.cookie.json = true;
 			let _cookie = $.cookie("proMsg");

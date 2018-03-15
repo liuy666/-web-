@@ -1,5 +1,14 @@
 require(["config"],function(){
-	require(["template","jquery","cookie","load"],function(tmp,$){
+	require(["template","jquery","load","cookie"],function(tmp,$,load){
+		load.done(function(){
+			$(".classify").hide();
+			$("#search").css("width","300px");
+			$("header").css({
+				boxShadow : "0 5px 5px -5px rgba(0,0,0,0.3)",
+				zIndex : 15,
+				position : "relative"
+			});
+		});
 		$(function(){
 			// 根据url获得商品分类名称
 			let _className = location.search.slice(1);

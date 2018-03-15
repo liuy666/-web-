@@ -8,6 +8,7 @@
 	<link href="/images/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 	<link rel="stylesheet" type="text/css" href="/css/common.css">
 	<link rel="stylesheet" type="text/css" href="/css/index.css">
+	<!-- <link rel="stylesheet" type="text/css" href="/lib/jquery_pluins/xmcarousel.css"> -->
 	<script src="/lib/requirejs/require.js" data-main="/js/index"></script>
 </head>
 <body>
@@ -28,7 +29,7 @@
 		<div class="main-wrap">
 			<div class="banner">
 				<!-- banner 轮播图 -->
-				<img src="/images/banner.jpg" alt="" title="banner" />
+				<div class="banner_carousel"></div>
 				<!-- 分类导航 -->
 				<ul class="nav-list">
 					<li>
@@ -503,18 +504,22 @@
 				<span class="name">老毕</span>
 			</a>
 			<!-- 动态加载促销商品 -->
-			<div class="promotion" style="display: none;"></div>
+			<div class="promotion">
+				<img src="/images/p1.jpg" />
+				<img src="/images/p2.jpg" />
+				<img src="/images/p3.jpg" />
+			</div>
 			<!-- 精选 -->
 			<div class="choiceness">
 				<h2>精选</h2>
 				<!-- 手风琴效果 -->
 				<ul>
-					<li><a href="#"><img src="/images/jx.jpg" alt=""></a></li>
-					<li><a href="#"><img src="/images/jx.jpg" alt=""></a></li>
-					<li><a href="#"><img src="/images/jx.jpg" alt=""></a></li>
-					<li><a href="#"><img src="/images/jx.jpg" alt=""></a></li>
-					<li><a href="#"><img src="/images/jx.jpg" alt=""></a></li>
-					<li><a href="#"><img src="/images/jx.jpg" alt=""></a></li>
+					<li class="flag"><a href="#"><img src="/images/jx1.jpg" alt=""></a></li>
+					<li><a href="#"><img src="/images/jx2.jpg" alt=""></a></li>
+					<li><a href="#"><img src="/images/jx3.jpg" alt=""></a></li>
+					<li><a href="#"><img src="/images/jx4.jpg" alt=""></a></li>
+					<li><a href="#"><img src="/images/jx5.jpg" alt=""></a></li>
+					<li><a href="#"><img src="/images/jx6.jpg" alt=""></a></li>
 				</ul>
 			</div>
 

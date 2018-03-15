@@ -1,5 +1,15 @@
 require(["config"],function(){
-	require(["jquery","load","cookie"],function(){
+	require(["jquery","load","cookie"],function($,load){
+		load.done(function(){
+			$(".head-top-wrap").hide();
+			$(".search").hide();
+			$(".head-bottom p").show();
+			$("header").css({
+				boxShadow : "0 5px 5px -5px rgba(0,0,0,0.3)",
+				zIndex : 15,
+				position : "relative"
+			});
+		});
 		$(function(){
 			$(".submit").click(function(){
 				let _phone = $(".phoneNumber").val(),

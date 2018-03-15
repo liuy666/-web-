@@ -1,5 +1,11 @@
 require(["config"],function(){
-	require(["jquery","template","load","cookie"],function($,tmp){
+	require(["jquery","template","load","cookie"],function($,tmp,load){
+		load.done(function(){
+			$(".classify").hide();
+			$("#search").css("width","300px");
+			$("header").css("box-shadow","0 5px 5px -5px rgba(0,0,0,0.3)");
+		});
+
 		$(function(){
 			// 根据url获得商品id
 			let pid = location.search.slice(1);
