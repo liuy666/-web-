@@ -26,11 +26,8 @@ gulp.task("lib",function(){
 	gulp.src("src/lib/**/*.*")
 		.pipe(gulp.dest("dist/lib"));
 });
-gulp.task("php",function(){
-	gulp.src("src/php/**/*.*")
-		.pipe(gulp.dest("dist/php"));
-});
-gulp.task("copyfile",["mock","lib","php"]);
+
+gulp.task("copyfile",["mock","lib"]);
 
 // 定义scss编译压缩任务
 gulp.task("sass",function(){
