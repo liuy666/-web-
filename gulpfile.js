@@ -1,23 +1,23 @@
 // 引入需要的功能模块
-let gulp = require("gulp"),
-	htmlmin = require("gulp-htmlmin"),
-	connect = require("gulp-connect"),
-	uglify = require("gulp-uglify"),
-	imagemin = require("gulp-imagemin"),
-	sass = require("gulp-sass"),
-	babel = require("gulp-babel")
-	_src = "src";
+let gulp = require("gulp"),  // gulp模块
+	htmlmin = require("gulp-htmlmin"),  // html压缩
+	connect = require("gulp-connect"),  // gulp服务器
+	uglify = require("gulp-uglify"),  // js压缩
+	imagemin = require("gulp-imagemin"),  // image压缩
+	sass = require("gulp-sass"),  // sass编译
+	babel = require("gulp-babel")  // ES6转码ES5
+	_src = "src";  // 根目录
 
 // 启动服务器
 gulp.task("connect",function(){
 	connect.server({
-		root : _src,
-		livereload : true,
-		port : 8888
+		root : _src,   // 根目录
+		livereload : true,  // 是否自动浏览器刷新
+		port : 8888   // 配置端口
 	});
 });
 
-// 将模拟假数据、js库、php文件 复制到 dist目录下
+// 将模拟假数据(mock)、js库(lib)复制到 dist目录下
 gulp.task("mock",function(){
 	gulp.src("src/mock/**/*.*")
 		.pipe(gulp.dest("dist/mock"));
@@ -26,13 +26,12 @@ gulp.task("lib",function(){
 	gulp.src("src/lib/**/*.*")
 		.pipe(gulp.dest("dist/lib"));
 });
-
 gulp.task("copyfile",["mock","lib"]);
 
-// 定义scss编译压缩任务
+// 定义sass编译压缩任务
 gulp.task("sass",function(){
 	gulp.src("src/sass/**/*.scss")
-		.pipe(sass({outputStyle : "compressed"}))
+		.pipe(sass({outputStyle : "compressed"})) // 输出压缩格式css
 		.pipe(gulp.dest(_src + "/css"))
 		.pipe(connect.reload());
 });
@@ -71,4 +70,4 @@ gulp.task("watch",function(){
 });
 
 // 定义默认任务
-gulp.task("default",["htmlmin","js","image","copyfile","sass","connect","watch"]);
+gulp.task("default",["htmlmin","js","sass","image","copyfile","connect","watch"]);

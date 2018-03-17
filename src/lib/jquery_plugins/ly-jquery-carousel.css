@@ -11,32 +11,37 @@
   bottom: 0;
   height: 50px;
   background: rgba(0, 0, 0, 0.8);
+  box-sizing: border-box;
 }
 .carousel .pages i {
   width: 35px;
   height: 35px;
   border-radius: 50%;
-  background: #fff;
+  background-color: #fff;
   float: left;
+  margin: 7.5px 10px;
+}
+.carousel .pages .current {
+  background-color: orange;
 }
 .carousel .toLeft, .carousel .toRight {
   position: absolute;
   top: 0;
   bottom: 0;
   margin: auto;
-  width: 40px;
-  height: 70px;
-  background: red;
-  line-height: 70px;
+  width: 48px;
+  height: 48px;
+  border-radius: 3px;
+  line-height: 48px;
   text-align: center;
   font-size: 24px;
   color: white;
 }
 .carousel .toLeft {
-  left: 0;
+  left: 210px;
+  background: url("/images/slider-left.png") no-repeat;
 }
 .carousel .toRight {
-  right: 0;
+  right: 10px;
+  background: url("/images/slider-right.png") no-repeat;
 }
-
-/*# sourceMappingURL=carousel.css.map */

@@ -21,25 +21,28 @@ require(["config"],function(){
 
 			// 轮播图
 			$(".banner_carousel").carousel({
-				imgs : [
-					{src:"/images/b1.jpg", href:"#"},
-					{src:"/images/b2.jpg", href:"#"},
-					{src:"/images/b3.jpg", href:"#"},
-					{src:"/images/b4.jpg", href:"#"},
-					{src:"/images/b5.jpg", href:"#"}
+				aImg : [
+					{src : "/images/b1.jpg"},
+					{src : "/images/b2.jpg"},
+					{src : "/images/b3.jpg"},
+					{src : "/images/b4.jpg"},
+					{src : "/images/b5.jpg"}
 				],
-				width: 1080,
-				height: 360,
-				duration: 3000
+				width : 1080,
+				height : 360,
+				duration : 2000,
+				type : "slide"
 			});
-
+			$(".toLeft").text("");
+			$(".toRight").text("");
+			$(".pages").css("display","none");
 			// 手风琴效果
 			// 初始化渲染页面
 			let lis = $(".choiceness ul li"),
 				_left = 620;
-			$(lis[0]).css("border","0");
+			lis.first().css("border","0");
 			for(let i = 1,len = lis.length; i < len; i++){
-				$(lis[i]).css("left",_left + "px");
+				lis.eq(i).css("left",_left + "px");
 				_left += 92;
 			}
 
@@ -56,8 +59,8 @@ require(["config"],function(){
 							left : parseInt($(".flag").css("left")) + 533 + "px"
 						},500);
 					for(let i = 0,len = nexts.length; i < len; i++){
-						$(nexts[i]).animate({
-							left : parseInt($(nexts[i]).css("left")) + 533 + "px"
+						nexts.eq(i).animate({
+							left : parseInt(nexts.eq(i).css("left")) + 533 + "px"
 						},500);
 					}
 				}
@@ -69,9 +72,9 @@ require(["config"],function(){
 						left : parseInt($(this).css("left")) - 533 + "px"
 					},500);
 					for(let i = 0,len = prevs.length; i < len; i++){
-						if(parseInt($(prevs[i]).css("left")) > 0){
-							$(prevs[i]).animate({
-								left : parseInt($(prevs[i]).css("left")) - 533 + "px"
+						if(parseInt(prevs.eq(i).css("left")) > 0){
+							prevs.eq(i).animate({
+								left : parseInt(prevs.eq(i).css("left")) - 533 + "px"
 							},500);
 						}
 					}
