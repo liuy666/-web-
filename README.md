@@ -1,4 +1,4 @@
-## 尝试模拟假数据做 ## 
+## 用模拟假数据简单重构 ## 
 ## 注册 ##
 - register.html
 - register.js
